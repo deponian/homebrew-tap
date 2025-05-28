@@ -8,10 +8,10 @@ class Logalize < Formula
   head "https://github.com/deponian/logalize.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/deponian/homebrew-tap/releases/download/logalize-0.4.6"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "77e6cfcd4a24f2fa05536347d6919ee3cc394d4fd39eca330109ba1446e49421"
-    sha256 cellar: :any_skip_relocation, ventura:       "8838a5d090d64a5e7f21ff5b31a0fb7581613044e84b176d0bf85015c8f4d840"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f0b794a8c99f70931b855f6ed406829fab563d79a90def029ca470b0cd112b98"
+    root_url "https://github.com/deponian/homebrew-tap/releases/download/logalize-0.4.7"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "1270d46878b9a067cafd0a431984eb0e94fa31cd83fe316e1e0bb1f732ba8013"
+    sha256 cellar: :any_skip_relocation, ventura:       "92da032358443466bf6c3907d0e7c14e35368fc09ba9e5abf369cef443c0a758"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "992714e9b89b9d0630bf3625c2d876ce1c1f16f96627474e2a7bba34caee32d0"
   end
 
   depends_on "go" => :build
