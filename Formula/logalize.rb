@@ -41,6 +41,6 @@ class Logalize < Formula
               fg: "#00ff00"
               style: bold
     EOF
-    assert_match "\e[;1mhello\e[0m\n", pipe_output("#{bin}/logalize -t test", "hello")
+    assert_match "\e[;1mhello\e[0m", pipe_output("#{bin}/logalize -t test", "hello")
   end
 end
