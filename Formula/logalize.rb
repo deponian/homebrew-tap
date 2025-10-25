@@ -2,8 +2,8 @@ class Logalize < Formula
   desc "Fast and extensible log colorizer. Alternative to ccze"
   homepage "https://github.com/deponian/logalize"
   url "https://github.com/deponian/logalize.git",
-    tag:      "v0.6.1",
-    revision: "9aae8b964718e939d3195c421654da802d93dcb9"
+    tag:      "v0.7.0",
+    revision: "36293fcdf3fdd834eaf01f5744e4997603240ed6"
   license "MIT"
   head "https://github.com/deponian/logalize.git", branch: "main"
 
