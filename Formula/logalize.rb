@@ -5,6 +5,7 @@ class Logalize < Formula
     tag:      "v0.8.1",
     revision: "fcb5e8c4ea5bf05ec81061937af3e5337548db4f"
   license "MIT"
+  revision 1
   head "https://github.com/deponian/logalize.git", branch: "main"
 
   bottle do
