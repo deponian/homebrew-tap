@@ -9,11 +9,17 @@ on:
 jobs:
   test-bot:
     strategy:
+      fail-fast: false
       matrix:
-        os: [ macos-15-intel, macos-26 ]
         include:
-          - os: ubuntu-latest
-            container: ghcr.io/homebrew/brew:main
+          - os: macos-15        # arm64_sequoia
+          - os: macos-26        # arm64_tahoe
+          - os: macos-15-intel  # sequoia
+          - os: macos-26-intel  # tahoe
+          - os: ubuntu-24.04
+            container: ghcr.io/homebrew/brew:main   # x86_64_linux
+          - os: ubuntu-24.04-arm
+            container: ghcr.io/homebrew/brew:main   # arm64_linux
     runs-on: ${{ matrix.os }}
     container: ${{ matrix.container }}
     permissions:
